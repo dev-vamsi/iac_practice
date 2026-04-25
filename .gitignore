@@ -33,3 +33,14 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Additional Terraform ignores
+# Ignore the whole .terraform directory (covers local and nested)
+.terraform/
+# Ignore plugin/CLI directory in user's home (plugin cache)
+.terraform.d/
+# Local state lock file created by the CLI for local backend
+.terraform.tfstate.lock.info
+# Plan output files
+*.tfplan
+tfplan
